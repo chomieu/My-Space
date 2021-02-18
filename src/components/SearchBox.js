@@ -8,7 +8,7 @@ function SearchForm(props) {
         id="search"
         name="search"
         placeholder="Search Employee"
-        value={props.value}
+        value={props.search}
         onChange={props.handleInputChange}>
       </input>
     </form>
