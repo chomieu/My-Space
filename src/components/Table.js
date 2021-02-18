@@ -14,15 +14,15 @@ export default class Table extends Component {
     this.getEmployees()
   }
 
-  handleInputChange = event => {
-    const name = event.target.name
-    const value = event.target.value
+  handleInputChange = ({ target }) => {
+    const { name, value } = target
     this.setState({ [name]: value })
   }
 
   getEmployees = () => {
     API.getRandom().then(res => {
       this.setState({ employees: res.data.results })
+      this.sortEmployees()
     }).catch(err => { console.log(err) })
   }
 
@@ -41,16 +41,16 @@ export default class Table extends Component {
   render() {
     return (
       <div className="container-fluid">
-        <SearchBox handleInputChange={this.handleInputChange} search={this.state.search}/>
+        <SearchBox handleInputChange={this.handleInputChange} search={this.state.search} />
         <table className="table table-striped">
           <thead>
-            <TableColumn reverseEmployees={this.reverseEmployees}/>
+            <TableColumn reverseEmployees={this.reverseEmployees} />
           </thead>
           <tbody>
-            {this.state.employees.filter(x => 
+            {this.state.employees.filter(x =>
               (`${x.name.first} ${x.name.last}`).toLowerCase().includes(this.state.search.toLowerCase()))
-              .map(person => <Employee key={this.state.employees.indexOf(person)} data={person}/>
-            )}
+              .map(person => <Employee key={this.state.employees.indexOf(person)} data={person} />
+              )}
           </tbody>
         </table>
       </div>
