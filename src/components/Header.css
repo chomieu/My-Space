@@ -5,19 +5,12 @@
 .tabs {
   color: white !important;
   font-weight: bold;
-  margin-right: 20px;
-  border: 1px solid;
+  margin-left: 25px;
+  border-bottom: 1px solid;
   width: 100px;
   text-align: center;
 }
 
 .tabs:hover {
-  background: #ffd270;
-}
-
-@media screen and (max-width: 991px) {
-  .tabs {
-    margin: 0 auto;
-    border: none;
-  }
+  background: #ffbf34;
 }

@@ -28,6 +28,7 @@
   font-size: 50px;
   padding-left: 7vw !important;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -58,7 +59,7 @@
     margin-right: 0;
   } 
   .typewriter {
-    font-size: clamp(20px, 6vw, 40px);
+    font-size: clamp(20px, 6vw, 45px);
     padding-left: 3vw !important;
   } 
 }
