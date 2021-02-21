@@ -9,10 +9,10 @@ import tsparticles from "../utils/tsparticles.json"
 import { Container, Row, Col } from "react-bootstrap"
 import "./Body.css"
 
-export default function Body() {
+export default function Body(props) {
 
   return (
-    <div className="bg">
+    <div className="bg" style={{backgroundImage: `url(${props.bgImg})`}}>
       <Line />
       <Header />
       <Container fluid className="content">
@@ -32,8 +32,7 @@ export default function Body() {
             </Font>
           </Col>
           <Col className="d-flex justify-content-end p-0" xs={12, { order: "first" }} lg={4, { order: "last" }}>
-            <img id="sun-img" src="https://i.imgur.com/qFcWar6.png" />
-            {/* <img className="cloud-img" src="https://i.imgur.com/5GHH8cu.png" /> */}
+            <img id="galaxy-img" src={props.galaxyImg} />
           </Col>
         </Row>
       </Container>
