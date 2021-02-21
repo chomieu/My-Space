@@ -1,13 +1,13 @@
 import React from "react";
-import Header from "./components/Header";
-import Table from "./components/Table";
+import Landing from "./pages/Landing"
+import About from "./pages/About";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Table />
-    </div>
+    <main>
+      <Landing />
+      {/* <About /> */}
+    </main>
   );
 }
 

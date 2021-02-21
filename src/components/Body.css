@@ -1,0 +1,57 @@
+.bg {
+  position: absolute;
+  width: 100%;
+  background: url(https://i.imgur.com/3xxHIQc.png) no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: initial;
+  height: 100vh;
+  z-index: -1;
+}
+
+.content {
+  height: calc(100% - 90px);
+  overflow: hidden;
+}
+
+#title {
+  font-size: clamp(30px, 7vw, 90px);
+  margin-bottom: 2vw;
+}
+
+.typewriter {
+  color: white;
+  font-size: 50px;
+  padding-left: 3vw !important;
+}
+
+#sun-img {
+  margin-right: 5vw;
+  width: min(35vw, 600px);
+  height: min(35vw, 600px);
+  object-fit: scale-down;
+  -webkit-animation: spin 1s linear forwards;
+  -moz-animation: spin 1s linear forwards;
+  animation: spin 1s linear forwards;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(180deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(180deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(180deg); transform:rotate(180deg); } }
+
+@media screen and (max-width: 991px) {
+  #sun-img {
+    width: auto;
+    height: min(90vw, 50vh);
+    margin-right: 0;
+  } 
+  .typewriter {
+    padding-bottom: 40px;
+  } 
+}
+
+@media screen and (max-width: 1280px) {
+  .typewriter {
+    font-size: min(6vw, 40px);
+  } 
+}
