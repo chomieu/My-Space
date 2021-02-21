@@ -12,12 +12,12 @@ export default function Header() {
       <Font family="Concert One">
         <h3 href="#home" className="text-white text-border">Chomie</h3>
       </Font>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle style={{border: "none"}} aria-controls="basic-navbar-nav" />
       <Navbar.Collapse className="justify-content-end">
         <Nav>
-          <Nav.Link href="#home">About</Nav.Link>
-          <Nav.Link href="#link">Projects</Nav.Link>
-          <Nav.Link href="#link">Contact</Nav.Link>
+          <Nav.Link className="tabs" href="#home">About</Nav.Link>
+          <Nav.Link className="tabs" href="#link">Projects</Nav.Link>
+          <Nav.Link className="tabs" href="#link">Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

@@ -30,7 +30,8 @@ export default function Body() {
             </Font>
           </Col>
           <Col className="d-flex justify-content-end p-0" xs={12, { order: "first" }} lg={4, { order: "last" }}>
-            <img id="sun-img" src="https://i.imgur.com/IhLMxmx.png" />
+            <img id="sun-img" src="https://i.imgur.com/qFcWar6.png" />
+            {/* <img className="cloud-img" src="https://i.imgur.com/5GHH8cu.png" /> */}
           </Col>
         </Row>
       </Container>

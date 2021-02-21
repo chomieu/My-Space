@@ -1,3 +1,23 @@
 .text-border {
   text-shadow: 1px 0 0 #f57e00, -1px 0 0 #f57e00, 0 1px 0 #f57e00, 0 -1px 0 #f57e00, 1px 1px #f57e00, -1px -1px 0 #f57e00, 1px -1px 0 #f57e00, -1px 1px 0 #f57e00;
 }
+
+.tabs {
+  color: white !important;
+  font-weight: bold;
+  margin-right: 20px;
+  border: 1px solid;
+  width: 100px;
+  text-align: center;
+}
+
+.tabs:hover {
+  background: #ffd270;
+}
+
+@media screen and (max-width: 991px) {
+  .tabs {
+    margin: 0 auto;
+    border: none;
+  }
+}
