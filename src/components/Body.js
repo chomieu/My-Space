@@ -1,6 +1,7 @@
 import React from "react"
 import Header from "./Header"
 import Title from "./Title"
+import Line from "./Line"
 import Font from "react-font"
 import Typewriter from "typewriter-effect";
 import Particles from "react-tsparticles";
@@ -12,6 +13,7 @@ export default function Body() {
 
   return (
     <div className="bg">
+      <Line />
       <Header />
       <Container fluid className="content">
         <Row className="h-100">
