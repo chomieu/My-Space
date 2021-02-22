@@ -1,10 +1,15 @@
-import React from 'react'
+import React from "react"
 import Body from "../components/Body"
 
 export default function About() {
   return (
     <div>
-      <Body />
+      <Body 
+        bgImg={"https://i.imgur.com/2HRNmAX.png"}
+        galaxyImg={"https://i.imgur.com/0MKfCWi.png"}
+        lineColor={"#e7ee8f"}
+        // pageContents={}
+      />
     </div>
   )
 }

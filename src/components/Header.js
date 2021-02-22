@@ -2,7 +2,6 @@ import React from "react"
 import Font from 'react-font'
 import Navbar from "react-bootstrap/Navbar"
 import { Nav, NavDropdown } from "react-bootstrap"
-import "./Header.css"
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 // import { faBars } from "@fortawesome/free-solid-svg-icons"
 

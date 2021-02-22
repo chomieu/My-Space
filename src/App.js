@@ -1,12 +1,16 @@
 import React from "react";
-import Landing from "./pages/Landing"
 import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Landing from "./pages/Landing"
+import Projects from "./pages/Projects";
 
 function App() {
   return (
     <main>
-      <Landing />
+      {/* <Landing /> */}
       {/* <About /> */}
+      {/* <Projects /> */}
+      <Contact />
     </main>
   );
 }
