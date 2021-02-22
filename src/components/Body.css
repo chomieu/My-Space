@@ -78,10 +78,15 @@
 #slideShow {
   width: 100%;
   background-color: black;
+  padding-left: 0 !important;
 }
 
 .carousel-caption {
-  padding-bottom: 7px !important;
+  padding-bottom: 0 !important;
+}
+
+.carousel-caption > div > h5 {
+  font-size: clamp(20px, 2.5vw, 40px);
 }
 
 .carousel-indicators {
@@ -133,6 +138,12 @@ svg {
 }
 
 @media screen and (max-width: 991px) {
+  .carousel-caption {
+    padding-bottom: 25% !important;
+  }
+  .carousel-caption > div > h5 {
+    font-size: 20px;
+  }
   #slideShow {
     padding-left: 0.35rem;
     width: min(50vh, 94vw);
@@ -169,6 +180,12 @@ svg {
 }
 
 @media screen and (min-height: 1365px) and (max-width: 1030px) {
+  .carousel-caption {
+    padding-bottom: 0.5rem !important;
+  }
+  .carousel-caption > div > h5 {
+    font-size: 40px;
+  }
   #slideShow {
     position: relative;
     left: 248px;
