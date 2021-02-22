@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 import Font from "react-font"
 import Typewriter from "typewriter-effect";
 

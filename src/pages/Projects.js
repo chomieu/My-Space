@@ -8,6 +8,7 @@ export default function Projects() {
         bgImg={"https://i.imgur.com/aBlxmBs.png"}
         galaxyImg={"https://i.imgur.com/8K4ur4P.png"}
         lineColor={"#bbb"}
+        hamburger={"dark"}
         // pageContents={}
       />
     </div>
