@@ -8,7 +8,7 @@ export default function Landing() {
       <Body 
         bgImg={"https://i.imgur.com/3xxHIQc.png"}
         galaxyImg={"https://i.imgur.com/qFcWar6.png"}
-        lineColor={"#fff7ae"}
+        lineColor={"#ffffaf"}
         pageContents={<Title />}
       />
     </div>

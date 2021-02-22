@@ -66,10 +66,10 @@ svg {
   z-index: 0;
   stroke-dasharray: 20;
   stroke-dashoffset: 20;
-  animation: draw 3s linear forwards;
+  animation: draw 1.5s linear forwards;
 }
 
-@keyframes draw { to { stroke-dashoffset: 0; } }
+@keyframes draw { to { stroke-dashoffset: 40; } }
 
 #galaxy-img {
   margin-right: 2vw;
@@ -77,14 +77,27 @@ svg {
   height: min(50vw, 700px);
   object-fit: scale-down;
   z-index: 1;
-  -webkit-animation: spin 3s linear forwards;
-  -moz-animation: spin 3s linear forwards;
-  animation: spin 3s linear forwards;
+  animation: spin-in 1.5s ease-in-out, spin 60s linear infinite;
 }
 
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+#galaxy-img:hover {
+  animation-play-state: paused ;
+}
+
+@keyframes spin-in {
+  0% {
+    transform: translate(40rem, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(369deg);
+  }
+}
+
+@keyframes spin { 
+  100% { 
+    transform:rotate(360deg); 
+  } 
+}
 
 @media screen and (max-width: 991px) {
   #galaxy-img {
@@ -94,8 +107,8 @@ svg {
   svg {
     width: 100vh;
     transform: translate(48vw, -47vw);
-    stroke-dasharray: 25;
-    stroke-dashoffset: 25;
+    stroke-dasharray: 22;
+    stroke-dashoffset: 22;
   }
   .tabs {
     margin-left: 10px;
@@ -111,12 +124,3 @@ svg {
     padding-left: 3vw !important;
   } 
 }
-
-
-/* -webkit-animation: up 3s linear forwards;
--moz-animation: up 3s linear forwards;
-animation: up 3s linear forwards; */
-
-@-moz-keyframes up { 0% { top:500px; } 100% { top: 0px; } }
-@-webkit-keyframes up { 0% { top:500px; } 100% { top: 0px; } }
-@keyframes up { 0% { top:500px; } 100% { top: 0px; } }

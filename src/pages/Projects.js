@@ -7,7 +7,7 @@ export default function Projects() {
       <Body 
         bgImg={"https://i.imgur.com/aBlxmBs.png"}
         galaxyImg={"https://i.imgur.com/8K4ur4P.png"}
-        lineColor={"#fff"}
+        lineColor={"#bbb"}
         // pageContents={}
       />
     </div>

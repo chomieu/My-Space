@@ -7,7 +7,7 @@ export default function About() {
       <Body 
         bgImg={"https://i.imgur.com/2HRNmAX.png"}
         galaxyImg={"https://i.imgur.com/0MKfCWi.png"}
-        lineColor={"#e7ee8f"}
+        lineColor={"#c7dca2"}
         // pageContents={}
       />
     </div>
