@@ -18,7 +18,7 @@ export default function Body(props) {
             {props.pageContents}
           </Col>
           <Col className="d-flex justify-content-end p-0" xs={12, { order: "first" }} lg={4, { order: "last" }}>
-            <img id="galaxy-img" src={props.galaxyImg} />
+            <img id="galaxyImg" src={props.galaxyImg} />
           </Col>
         </Row>
       </Container>

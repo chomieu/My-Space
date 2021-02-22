@@ -1,5 +1,6 @@
 import React from "react"
 import Body from "../components/Body"
+import Slideshow from "../components/Slideshow"
 
 export default function Projects() {
   return (
@@ -9,7 +10,7 @@ export default function Projects() {
         galaxyImg={"https://i.imgur.com/8K4ur4P.png"}
         lineColor={"#bbb"}
         hamburger={"dark"}
-        // pageContents={}
+        pageContents={<Slideshow />}
       />
     </div>
   )

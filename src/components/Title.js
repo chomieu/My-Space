@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 
 export default function Title() {
   return (
-    <section className="typewriter-border">
+    <section className="typewriterBorder">
       <Font family="Pragati Narrow">
         <h1 id="title">Chomkan<br />Usaneerungrueng</h1>
       </Font>

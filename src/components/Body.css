@@ -53,16 +53,16 @@
   text-shadow: 2px 0 20px whitesmoke, -2px 0 0 #f57e00, 0 2px 0 #f57e00, 0 -2px 0 #f57e00, 1px 1px #f57e00, -1px -1px 0 #f57e00, 1px -1px 0 #f57e00, -1px 1px 0 #f57e00;
 }
 
-.typewriter-border {
+.typewriterBorder {
   text-shadow: 1px 0 0 #f57e00, -1px 0 0 #f57e00, 0 1px 0 #f57e00, 0 -1px 0 #f57e00, 1px 1px #f57e00, -1px -1px 0 #f57e00, 1px -1px 0 #f57e00, -1px 1px 0 #f57e00;
 }
 
 #myImg {
-  color: white;
+  color: #81d6ea;
   background: url(https://i.imgur.com/mteTq4g.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: rgba(0, 168, 22, 0.329);
+  background-color: rgba(0, 170, 23, 0.4);
   background-blend-mode:lighten;
   width: min(45vw, 750px);
   height: min(45vw, 750px);
@@ -72,6 +72,11 @@
   position: absolute;
   bottom: 6vh;
   left: 7rem;
+  z-index: 2;
+}
+
+#slideShow {
+  width: 100%;
 }
 
 svg {
@@ -86,7 +91,7 @@ svg {
 
 @keyframes draw { to { stroke-dashoffset: 40; } }
 
-#galaxy-img {
+#galaxyImg {
   margin-right: 2vw;
   width: min(50vw, 700px);
   height: min(50vw, 700px);
@@ -95,7 +100,7 @@ svg {
   animation: spin-in 1.5s ease-in-out, spin 60s linear infinite;
 }
 
-#galaxy-img:hover {
+#galaxyImg:hover {
   animation-play-state: paused ;
 }
 
@@ -115,13 +120,17 @@ svg {
 }
 
 @media screen and (max-width: 991px) {
+  #slideShow {
+    padding-left: 0.35rem;
+    width: min(50vh, 94vw);
+  }
   #myImg {
     width: clamp(235px, 65vw, 445px);
     height: clamp(235px, 65vw, 445px);
     bottom: 0;
     left: 1.3rem;
   }
-  #galaxy-img {
+  #galaxyImg {
     width: auto;
     height: min(90vw, 50vh);
   } 
@@ -137,7 +146,7 @@ svg {
 }
 
 @media screen and (max-width: 1470px) {
-  #galaxy-img {
+  #galaxyImg {
     margin-right: 0;
   } 
   .contents {
@@ -146,13 +155,12 @@ svg {
   } 
 }
 
-@media screen and (min-height: 1365px) {
-  .header {
-    transform: scale(1.5);
-    margin-left: 200px;
-  }
-  .bg {
-    background-position: left;
+@media screen and (min-height: 1365px) and (max-width: 1030px) {
+  #slideShow {
+    position: relative;
+    left: 248px;
+    top: 320px;
+    width: 850px;
   }
   #myImg {
     width: 650px;
@@ -165,7 +173,7 @@ svg {
   .contents {
     font-size: 50px;
   }
-  #galaxy-img {
+  #galaxyImg {
     margin-top: 5rem;
   }
 }
