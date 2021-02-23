@@ -13,10 +13,10 @@ export default function Header() {
         />
         <Carousel.Caption>
           <Font family="Concert One">
-            <p className="my-2 py-2" style={{borderBottom: "1px solid white"}}>My Recent Work</p>
+            <p className="my-1 py-1">My Recent Work</p>
             <h4>This slideshow contains</h4>
             <h4> projects I've worked on recently.</h4>
-            <p>For more examples</p>
+            <p className="my-1 py-1">For more examples</p>
             <h4>Email: chomieu@gmail.com</h4>
           </Font>
         </Carousel.Caption>

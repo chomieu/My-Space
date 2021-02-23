@@ -123,8 +123,8 @@
 
 #slideShow {
   width: 100%;
-  background-color: black;
   padding-left: 0 !important;
+  background-color: black;
   border: 1px solid #555;
 }
 
@@ -138,11 +138,12 @@
 .carousel-caption > div {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .carousel-caption > div > p {
   font-size: clamp(16px, 2.5vw, 40px);
+  border-bottom: 1px solid white;
 }
 
 .carousel-caption > div > h4 {
@@ -150,7 +151,7 @@
 }
 
 .carousel-caption > div > h5 {
-  font-size: clamp(20px, 2.5vw, 40px);
+  font-size: clamp(25px, 4vw, 80px);
 }
 
 .carousel-indicators {
@@ -249,12 +250,6 @@ svg {
 /* --- @media screen --- */
 
 @media screen and (max-width: 991px) {
-  .carousel-caption > div > p {
-    margin-bottom: 0rem;
-  }
-  .carousel-caption > div > h5 {
-    font-size: 20px;
-  }
   #slideShow {
     margin-left: 5px;
     padding-left: 0.35rem;
@@ -292,12 +287,6 @@ svg {
 }
 
 @media screen and (min-height: 1365px) and (max-width: 1030px) {
-  .carousel-caption {
-    padding-bottom: 0.5rem !important;
-  }
-  .carousel-caption > div > h5 {
-    font-size: 40px;
-  }
   #slideShow {
     position: relative;
     left: 248px;
