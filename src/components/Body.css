@@ -79,6 +79,7 @@
   width: 100%;
   background-color: black;
   padding-left: 0 !important;
+  border: 1px solid #555;
 }
 
 .carousel-caption {
