@@ -5,33 +5,31 @@ import Typewriter, { TypewriterClass } from "typewriter-effect";
 export default function Title() {
   return (
     <section className="typewriterBorder">
-      <Font family="Pragati Narrow">
-        <h1 class="animate three" id="title">
-          <span>C</span>
-          <span>h</span>
-          <span>o</span>
-          <span>m</span>
-          <span>k</span>
-          <span>a</span>
-          <span>n</span>
-          <br />
-          <span>U</span>
-          <span>s</span>
-          <span>a</span>
-          <span>n</span>
-          <span>e</span>
-          <span>e</span>
-          <span>r</span>
-          <span>u</span>
-          <span>n</span>
-          <span>g</span>
-          <span>r</span>
-          <span>u</span>
-          <span>e</span>
-          <span>n</span>
-          <span>g</span>
-        </h1>
-      </Font>
+      <h1 id="title">
+        <span>C</span>
+        <span>h</span>
+        <span>o</span>
+        <span>m</span>
+        <span>k</span>
+        <span>a</span>
+        <span>n</span>
+        <br />
+        <span>U</span>
+        <span>s</span>
+        <span>a</span>
+        <span>n</span>
+        <span>e</span>
+        <span>e</span>
+        <span>r</span>
+        <span>u</span>
+        <span>n</span>
+        <span>g</span>
+        <span>r</span>
+        <span>u</span>
+        <span>e</span>
+        <span>n</span>
+        <span>g</span>
+      </h1>
       <Font family="Concert One">
         <Typewriter
           options={{

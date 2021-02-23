@@ -9,7 +9,7 @@ export default function About() {
         bgImg={"https://i.imgur.com/2HRNmAX.png"}
         galaxyImg={"https://i.imgur.com/0MKfCWi.png"}
         lineColor={"#c7dca2"}
-        shadowColor={"#EFEFB1"}
+        shadowColor={"#efefb1"}
         hamburger={"light"}
         pageContents={<Me />}
       />

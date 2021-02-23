@@ -19,32 +19,33 @@
 
 /* --- Title --- */
 
-.animate span { display: inline-block; }
+#title span { display: inline-block; }
 
-.animate span:nth-of-type(22) { animation-delay: 1s; }
-.animate span:nth-of-type(21) { animation-delay: 1.05s; }
-.animate span:nth-of-type(20) { animation-delay: 1.10s; }
-.animate span:nth-of-type(19) { animation-delay: 1.15s; }
-.animate span:nth-of-type(18) { animation-delay: 1.20s; }
-.animate span:nth-of-type(17) { animation-delay: 1.25s; }
-.animate span:nth-of-type(16) { animation-delay: 1.30s; }
-.animate span:nth-of-type(15) { animation-delay: 1.35s; }
-.animate span:nth-of-type(14) { animation-delay: 1.40s; }
-.animate span:nth-of-type(13) { animation-delay: 1.45s; }
-.animate span:nth-of-type(12) { animation-delay: 1.50s; }
-.animate span:nth-of-type(11) { animation-delay: 1.55s; }
-.animate span:nth-of-type(10) { animation-delay: 1.60s; }
-.animate span:nth-of-type(9) { animation-delay: 1.65s; }
-.animate span:nth-of-type(8) { animation-delay: 1.70s; }
-.animate span:nth-of-type(7) { animation-delay: 1.40s; }
-.animate span:nth-of-type(6) { animation-delay: 1.45s; }
-.animate span:nth-of-type(5) { animation-delay: 1.50s; }
-.animate span:nth-of-type(4) { animation-delay: 1.55s; }
-.animate span:nth-of-type(3) { animation-delay: 1.60s; }
-.animate span:nth-of-type(2) { animation-delay: 1.65s; }
-.animate span:nth-of-type(1) { animation-delay: 1.70s; }
+#title span:nth-of-type(22) { animation-delay: 1s; }
+#title span:nth-of-type(21) { animation-delay: 1.05s; }
+#title span:nth-of-type(20) { animation-delay: 1.10s; }
+#title span:nth-of-type(19) { animation-delay: 1.15s; }
+#title span:nth-of-type(18) { animation-delay: 1.20s; }
+#title span:nth-of-type(17) { animation-delay: 1.25s; }
+#title span:nth-of-type(16) { animation-delay: 1.30s; }
+#title span:nth-of-type(15) { animation-delay: 1.35s; }
+#title span:nth-of-type(14) { animation-delay: 1.40s; }
+#title span:nth-of-type(13) { animation-delay: 1.45s; }
+#title span:nth-of-type(12) { animation-delay: 1.50s; }
+#title span:nth-of-type(11) { animation-delay: 1.55s; }
+#title span:nth-of-type(10) { animation-delay: 1.60s; }
+#title span:nth-of-type(9) { animation-delay: 1.65s; }
+#title span:nth-of-type(8) { animation-delay: 1.70s; }
+#title span:nth-of-type(7) { animation-delay: 1.40s; }
+#title span:nth-of-type(6) { animation-delay: 1.45s; }
+#title span:nth-of-type(5) { animation-delay: 1.50s; }
+#title span:nth-of-type(4) { animation-delay: 1.55s; }
+#title span:nth-of-type(3) { animation-delay: 1.60s; }
+#title span:nth-of-type(2) { animation-delay: 1.65s; }
+#title span:nth-of-type(1) { animation-delay: 1.70s; }
 
-.three span {
+#title span {
+  font-family: 'Times New Roman', Times, serif;
   opacity: 0;
   color: #f57e00;
   animation: sideSlide 1.5s forwards;
@@ -128,7 +129,24 @@
 }
 
 .carousel-caption {
-  padding-bottom: 0 !important;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 !important;
+}
+
+.carousel-caption > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.carousel-caption > div > p {
+  font-size: clamp(16px, 2.5vw, 40px);
+}
+
+.carousel-caption > div > h4 {
+  font-size: clamp(12px, 2vw, 40px);
 }
 
 .carousel-caption > div > h5 {
@@ -231,13 +249,14 @@ svg {
 /* --- @media screen --- */
 
 @media screen and (max-width: 991px) {
-  .carousel-caption {
-    padding-bottom: 25% !important;
+  .carousel-caption > div > p {
+    margin-bottom: 0rem;
   }
   .carousel-caption > div > h5 {
     font-size: 20px;
   }
   #slideShow {
+    margin-left: 5px;
     padding-left: 0.35rem;
     width: min(50vh, 94vw);
   }
