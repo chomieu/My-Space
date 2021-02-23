@@ -9,6 +9,7 @@ export default function Landing() {
         bgImg={"https://i.imgur.com/3xxHIQc.png"}
         galaxyImg={"https://i.imgur.com/qFcWar6.png"}
         lineColor={"#ffffaf"}
+        shadowColor={"#ff7402"}
         hamburger={"dark"}
         pageContents={<Title />}
       />

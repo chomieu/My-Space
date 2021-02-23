@@ -8,6 +8,24 @@ export default function Header() {
       <Carousel.Item>
         <img
           className="d-block w-100"
+          src="https://i.imgur.com/t3cMxZ5.jpg"
+          alt="Intro slide"
+        />
+        <Carousel.Caption>
+          <Font family="Concert One">
+            <p>Collection of my work</p>
+            <h4>Hello this is going to be longgggggggg</h4>
+            <p>Collection of my work</p>
+            <p>Collection of my work</p>
+            <p>Collection of my work</p>
+            <br/>
+            {/* <h5 className="text-border mb-0 mt-2">Meets</h5> */}
+          </Font>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
           src="https://i.imgur.com/MJ5Rf8k.png"
           alt="First slide"
         />

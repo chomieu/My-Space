@@ -9,9 +9,10 @@ import "./Body.css"
 export default function Body(props) {
 
   return (
-    <div className="bg" style={{backgroundImage: `url(${props.bgImg})`}}>
+    <div className="bg" style={{ backgroundImage: `url(${props.bgImg})` }}>
+      <div id="darkness" style={{ background: `linear-gradient(-80deg, ${props.shadowColor}00, ${props.shadowColor}00, ${props.shadowColor}77, ${props.shadowColor}, ${props.shadowColor})`}}></div>
       <Line lineColor={props.lineColor} />
-      <Header hamburger={props.hamburger} themeColor={props.themeColor}/>
+      <Header hamburger={props.hamburger} themeColor={props.themeColor} />
       <Container fluid className="wrapper">
         <Row className="h-100">
           <Col className="contents" xs={12} lg={6}>
