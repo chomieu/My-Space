@@ -10,7 +10,7 @@ function App() {
     <Router>
       <main>
         <Switch>
-          <Route exact path="/">
+          <Route exact path={["/", "/React-Portfolio"]}>
             <Landing />
           </Route>
           <Route exact path="/About">
