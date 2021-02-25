@@ -4,10 +4,11 @@ import Contact from "./pages/Contact";
 import Landing from "./pages/Landing"
 import Projects from "./pages/Projects";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { browserHistory } from "react-router"
 
 function App() {
   return (
-    <Router>
+    <Router history={browserHistory}>
       <Switch>
         <Route exact path={["/", "/React-Portfolio"]}>
           <Landing />
