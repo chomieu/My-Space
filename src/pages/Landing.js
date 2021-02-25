@@ -6,8 +6,8 @@ export default function Landing() {
   return (
     <div>
       <Body 
-        bgImg={"https://i.imgur.com/3xxHIQc.png"}
-        galaxyImg={"https://i.imgur.com/qFcWar6.png"}
+        bgImg={"https://i.imgur.com/5QXXAkE.jpg"}
+        galaxyImg={"https://i.imgur.com/z5oQO2Q.png"}
         lineColor={"#ffffaf"}
         shadowColor={"#ff7402"}
         hamburger={"dark"}

@@ -1,28 +1,20 @@
 import React from "react"
-import Header from "./Header"
+import Darkness from "./Darkness"
 import Line from "./Line"
+import Header from "./Header"
+import Contents from "./Contents"
 import Particles from "react-tsparticles";
 import tsparticles from "../utils/tsparticles.json"
-import { Container, Row, Col } from "react-bootstrap"
 import "./Body.css"
 
 export default function Body(props) {
 
   return (
     <div className="bg" style={{ backgroundImage: `url(${props.bgImg})` }}>
-      <div id="darkness" style={{ background: `linear-gradient(-80deg, ${props.shadowColor}00, ${props.shadowColor}00, ${props.shadowColor}77, ${props.shadowColor}, ${props.shadowColor})`}}></div>
+      <Darkness shadowColor={props.shadowColor} />
       <Line lineColor={props.lineColor} />
       <Header hamburger={props.hamburger} themeColor={props.themeColor} />
-      <Container fluid className="wrapper">
-        <Row className="h-100">
-          <Col className="contents" xs={12} lg={6}>
-            {props.pageContents}
-          </Col>
-          <Col className="d-flex justify-content-end p-0" xs={12, { order: "first" }} lg={4, { order: "last" }}>
-            <img id="galaxyImg" src={props.galaxyImg} />
-          </Col>
-        </Row>
-      </Container>
+      <Contents pageContents={props.pageContents} galaxyImg={props.galaxyImg}/>
       <Particles id="tsparticles" options={tsparticles} />
     </div>
   )

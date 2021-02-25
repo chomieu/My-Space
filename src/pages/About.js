@@ -6,8 +6,8 @@ export default function About() {
   return (
     <div>
       <Body 
-        bgImg={"https://i.imgur.com/2HRNmAX.png"}
-        galaxyImg={"https://i.imgur.com/0MKfCWi.png"}
+        bgImg={"https://i.imgur.com/XAaRPSN.jpg"}
+        galaxyImg={"https://i.imgur.com/bPkDW02.png"}
         lineColor={"#c7dca2"}
         shadowColor={"#efefb1"}
         hamburger={"light"}

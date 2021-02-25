@@ -6,8 +6,8 @@ export default function Projects() {
   return (
     <div>
       <Body 
-        bgImg={"https://i.imgur.com/aBlxmBs.png"}
-        galaxyImg={"https://i.imgur.com/8K4ur4P.png"}
+        bgImg={"https://i.imgur.com/KLSZtA6.jpg"}
+        galaxyImg={"https://i.imgur.com/t6WUaAR.png"}
         lineColor={"#bbb"}
         shadowColor={"#000000"}
         hamburger={"dark"}

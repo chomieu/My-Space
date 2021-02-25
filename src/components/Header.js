@@ -8,7 +8,7 @@ export default function Header(props) {
       <Font family="Concert One">
         <Nav.Link href="/" className="text-white text-border pl-0 pl-md-2 pl-lg-3 mr-1"><h3>Chomie</h3></Nav.Link>
       </Font>
-      <Navbar.Toggle bg="dark" style={{border: "none"}} aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle bg="dark" style={{border: "none"}} />
       <Navbar.Collapse>
         <Nav>
           <Nav.Link className="tabs" href="/About">About</Nav.Link>

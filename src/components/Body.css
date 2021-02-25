@@ -78,7 +78,7 @@
 }
 
 #title {
-  font-size: clamp(40px, 7vw, 90px);
+  font-size: clamp(35px, 6vw, 85px);
   margin-bottom: 2vw;
   text-shadow: 2px 0 20px whitesmoke, -2px 0 0 #f57e00, 0 2px 0 #f57e00, 0 -2px 0 #f57e00, 1px 1px #f57e00, -1px -1px 0 #f57e00, 1px -1px 0 #f57e00, -1px 1px 0 #f57e00;
 }
@@ -103,13 +103,13 @@
 
 #myImg {
   color: #81d6ea;
-  background: url(https://i.imgur.com/mteTq4g.jpg) no-repeat;
+  background: url("https://i.imgur.com/DZvfjL8.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-color: rgba(0, 170, 23, 0.4);
   background-blend-mode:lighten;
-  width: min(45vw, 750px);
-  height: min(45vw, 750px);
+  width: min(45vw, 700px);
+  height: min(45vw, 700px);
   border: none;
   border-radius: 50%;
   font-size: clamp(40px, 7vw, 90px);
