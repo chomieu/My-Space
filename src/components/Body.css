@@ -4,22 +4,19 @@
   text-shadow: 1px 0 0 rgba(0, 0, 0, 0.2), -1px 0 0 rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2), 0 -1px 0 rgba(0, 0, 0, 0.2), 1px 1px rgba(0, 0, 0, 0.2), -1px -1px 0 rgba(0, 0, 0, 0.2), 1px -1px 0 rgba(0, 0, 0, 0.2), -1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
+.tabs, .tabsOpposite {
+font-weight: bold;
+border-bottom: 1px solid;
+width: 100px;
+text-align: center;
+}
+
 .tabs {
   color: white !important;
-  font-weight: bold;
-  margin-left: 25px;
-  border-bottom: 1px solid;
-  width: 100px;
-  text-align: center;
 }
 
 .tabsOpposite {
   color: #99a381 !important;
-  font-weight: bold;
-  margin-left: 25px;
-  border-bottom: 1px solid;
-  width: 100px;
-  text-align: center;
 }
 
 .tabs:hover {
@@ -103,7 +100,7 @@
 .Typewriter {
   opacity: 0;
   animation: appear 0.1s linear forwards;
-  animation-delay: 3.5s;
+  animation-delay: 3.25s;
 }
 
 @keyframes appear {
@@ -112,10 +109,36 @@
   }
 }
 
+/* --- Contact --- */
+
+.whiteIcon, .blackIcon {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.whiteIcon:focus, .blackIcon:focus {
+  border: none;
+}
+
+.whiteIcon { 
+  background-color: black; 
+}
+
+.blackIcon { 
+  border: 2px solid white;
+  background-color: white 
+}
+
 /* --- AboutMe --- */
 
 #bio {
   z-index: 1;
+  font-size: clamp(14px, 2vw, 25px);
+  width: 100%;
+  padding-left: 9vw !important;
+  opacity: 0;
+  animation: appear 1s linear forwards;
+  animation-delay: 1s;
 }
 
 #fake-bg {
@@ -176,14 +199,14 @@
   height: min(45vw, 700px);
   border: 4px solid #f6f4cd;
   border-radius: 50%;
-  font-size: clamp(40px, 7vw, 90px);
+  font-size: min(4vw, 47.5px);
   position: absolute;
   bottom: 4rem;
   left: 7rem;
   z-index: 2;
   opacity: 0;
   animation: projected 1.5s ease-in-out forwards;
-  animation-delay: 1.5s;
+  animation-delay: 1s;
 }
 
 #myImg:hover {
@@ -242,7 +265,7 @@
 }
 
 .carousel-item > div > div > h4 {
-  font-size: clamp(12px, 2vw, 30px);
+  font-size: clamp(14px, 2vw, 30px);
 }
 
 .carousel-item > div > div > h3 {
@@ -355,9 +378,7 @@ svg {
 @media screen and (max-width: 991px) {
   #bio {
     background-color: rgba(65, 65, 65, 0.3);
-    position: relative;
-    height: calc(100vh - 90px);
-    width: 100vw;
+    padding: 1rem !important;
   }
   @keyframes projected {
     0% {
@@ -380,6 +401,7 @@ svg {
   #myImg, #myImg2 {
     width: clamp(235px, 65vw, 445px);
     height: clamp(235px, 65vw, 445px);
+    font-size: max(4vw, 20px);
     bottom: 0;
     left: 1.3rem;
   }

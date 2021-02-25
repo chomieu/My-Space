@@ -1,5 +1,6 @@
 import React from "react"
 import Body from "../components/Body"
+import Links from "../components/Links"
 
 export default function Contact() {
   return (
@@ -10,7 +11,7 @@ export default function Contact() {
         lineColor={"#9690df"}
         shadowColor={"#000000"}
         hamburger={"dark"}
-        // pageContents={}
+        pageContents={<Links />}
       />
     </div>
   )

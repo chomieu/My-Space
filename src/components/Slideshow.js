@@ -12,10 +12,10 @@ export default function Header() {
           alt="Intro slide"
         />
         <div style={{ opacity: 1 }}>
-          <Font family="Concert One">
-            <p className="mb-3 text-center">My Recent Work</p>
+          <Font family="Monda">
+            <p className="mb-3 text-center">Recent Projects</p>
             <h4>This slideshow contains</h4>
-            <h4>projects I've worked on recently.</h4>
+            <h4>my award-winning projects.</h4>
             <h4>Hover on them for more details!</h4>
           </Font>
         </div>
@@ -53,6 +53,18 @@ export default function Header() {
               <Button href="https://github.com/chomieu/Voicely" variant="light" className="mr-3">Repository</Button>
               <Button href="https://chomieu.github.io/Voicely/" variant="light">Live Site</Button>
             </div>
+          </Font>
+        </div>
+      </Carousel.Item>
+      <Carousel.Item interval={3000}>
+        <img
+          className="d-block w-100"
+          src="https://i.imgur.com/PV0WiqE.jpg"
+          alt="Intro slide"
+        />
+        <div style={{ opacity: 1 }}>
+          <Font family="Monda">
+            <h4>Checkout my Github Repo for more:</h4><Button href="https://github.com/chomieu" variant="light" size="lg" className="mt-3">Here</Button>
           </Font>
         </div>
       </Carousel.Item>
