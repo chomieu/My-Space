@@ -123,39 +123,54 @@
 
 #slideShow {
   width: 100%;
-  padding-left: 0 !important;
   background-color: black;
   border: 1px solid #555;
 }
 
-.carousel-caption {
+.carousel-item > div {
+  opacity: 0;
+}
+
+.carousel-item > div:hover {
+  opacity: 1;
+}
+
+.carousel-item > div > div {
+  width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  padding: 0 !important;
-}
-
-.carousel-caption > div {
-  display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.carousel-caption > div > p {
+.carousel-item > div > div > p {
+  width: 70%;
   font-size: clamp(16px, 2.5vw, 40px);
   border-bottom: 1px solid white;
 }
 
-.carousel-caption > div > h4 {
+.carousel-item > div > div > h4 {
   font-size: clamp(12px, 2vw, 40px);
 }
 
-.carousel-caption > div > h5 {
+.carousel-item > div > div > h3 {
   font-size: clamp(25px, 4vw, 80px);
 }
 
 .carousel-indicators {
-  margin-bottom: 0;
+  margin: 0 !important;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-control-next, .carousel-control-prev {
+  height: 55%;
+  display: flex;
+  align-items: flex-end !important;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
