@@ -11,9 +11,9 @@ export default function Header(props) {
       <Navbar.Toggle bg="dark" style={{border: "none"}} />
       <Navbar.Collapse>
         <Nav>
-          <Nav.Link className="tabs" href="/About">About</Nav.Link>
-          <Nav.Link className="tabs" href="/Projects">Projects</Nav.Link>
-          <Nav.Link className="tabs" href="/Contact">Contact</Nav.Link>
+          <Nav.Link className="tabs" href="/React-Portfolio/About">About</Nav.Link>
+          <Nav.Link className="tabs" href="/React-Portfolio/Projects">Projects</Nav.Link>
+          <Nav.Link className="tabs" href="/React-Portfolio/Contact">Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
