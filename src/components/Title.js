@@ -1,6 +1,6 @@
 import React from "react"
 import Font from "react-font"
-import Typewriter, { TypewriterClass } from "typewriter-effect";
+import Typewriter from "typewriter-effect";
 
 export default function Title() {
   return (
