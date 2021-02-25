@@ -1,1 +1,40 @@
-# Employee-Directory
+# React-Portfolio
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)
+        
+## Description
+Personal portfolio made with ReactJS.
+
+## Table of Contents
+* [Installation](#installation)
+* [Preview](#preview)
+* [Link](#link)
+* [Technologies](#technologies)
+* [License](#license)
+* [Questions](#questions)
+        
+## Installation
+1. Make sure you have Node.js installed ([download](https://nodejs.org/en/))
+2. Clone this repo into your directory
+```
+git clone git@github.com:chomieu/React-Portfolio.git
+```
+3. Install any dependencies
+```
+npm install
+```
+
+## Preview
+[Preview Video]()</br>
+![Preview GIF](./preview.gif)
+
+## Link
+<https://chomieu.github.io/React-Portfolio/>
+
+## Technologies
+<img src="https://d23wxovozhm1zu.cloudfront.net/uploads/technologies/logos/big/20/original/renuo_technology_react-large.png?v=63748570849" width="150" />
+
+## License
+[MIT](./LICENSE) License
+
+## Questions
+For questions, contact [chomieu](https://github.com/chomieu) or email chomieu@gmail.com
