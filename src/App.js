@@ -9,16 +9,16 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path={["/React-Portfolio"]}>
+        <Route exact path={["/", "/React-Portfolio"]}>
           <Landing />
         </Route>
-        <Route exact path={["/React-Portfolio/About"]}>
+        <Route exact path={["/About", "/React-Portfolio/About"]}>
           <About />
         </Route>
-        <Route exact path={["/React-Portfolio/Projects"]}>
+        <Route exact path={["/Projects", "/React-Portfolio/Projects"]}>
           <Projects />
         </Route>
-        <Route exact path={["/React-Portfolio/Contact"]}>
+        <Route exact path={["/Contact", "/React-Portfolio/Contact"]}>
           <Contact />
         </Route>
       </Switch>
