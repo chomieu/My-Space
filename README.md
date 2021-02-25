@@ -1,7 +1,6 @@
 # React-Portfolio
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)
-        
-## Description
+
 Personal portfolio made with ReactJS.
 
 ## Table of Contents
