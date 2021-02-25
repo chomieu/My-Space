@@ -13,8 +13,21 @@
   text-align: center;
 }
 
+.tabsOpposite {
+  color: #99a381 !important;
+  font-weight: bold;
+  margin-left: 25px;
+  border-bottom: 1px solid;
+  width: 100px;
+  text-align: center;
+}
+
 .tabs:hover {
   background: rgba(255, 255, 255, 0.3);
+}
+
+.tabsOpposite:hover {
+  background: #99a38133;
 }
 
 /* --- Title --- */
@@ -99,22 +112,73 @@
   }
 }
 
-/* --- Me --- */
+/* --- AboutMe --- */
 
-#myImg {
-  color: #81d6ea;
+#bio {
+  z-index: 1;
+}
+
+#fake-bg {
+  background: url("https://i.imgur.com/XAaRPSN.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#myImg2 {
   background: url("https://i.imgur.com/DZvfjL8.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: rgba(0, 170, 23, 0.4);
+  width: min(45vw, 700px);
+  height: min(45vw, 700px);
+  border: 4px solid #f6f4cd;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 4rem;
+  left: 7rem;
+  animation: toBackground 0.5s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes toBackground {
+  0% {
+    border: 4px solid #f6f4cd;
+  }
+  50% {
+    border: 3px solid #f6f4cd;
+  }
+  100% {
+    border: none;
+    border-radius: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    bottom: 0vh;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+/* --- Me --- */
+
+#myImg {
+  color: #f6f4cd;
+  background: url("https://i.imgur.com/DZvfjL8.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 170, 23, 0.5);
   background-blend-mode:lighten;
   width: min(45vw, 700px);
   height: min(45vw, 700px);
-  border: none;
+  border: 4px solid #f6f4cd;
   border-radius: 50%;
   font-size: clamp(40px, 7vw, 90px);
   position: absolute;
-  bottom: 6vh;
+  bottom: 4rem;
   left: 7rem;
   z-index: 2;
   opacity: 0;
@@ -122,17 +186,21 @@
   animation-delay: 1.5s;
 }
 
+#myImg:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+
 @keyframes projected {
   0% {
     opacity: 0;
-    transform: translate(100vw, 0) rotate(0deg);
+    transform: translate(100vw, 0);
   }
   50% {
     opacity: 0;
   }
   100% {
     opacity: 1;
-    transform: translate(0, 0) rotate(360deg);
+    transform: translate(0, 0);
   }
 }
 
@@ -285,17 +353,23 @@ svg {
 /* --- @media screen --- */
 
 @media screen and (max-width: 991px) {
+  #bio {
+    background-color: rgba(65, 65, 65, 0.3);
+    position: relative;
+    height: calc(100vh - 90px);
+    width: 100vw;
+  }
   @keyframes projected {
     0% {
       opacity: 0;
-      transform: translate(100vw, -100vh) rotate(0deg);
+      transform: translate(80vw, -100vh);
     }
-    50% {
+    60% {
       opacity: 0;
     }
     100% {
       opacity: 1;
-      transform: translate(0, 0) rotate(360deg);
+      transform: translate(0, 0);
     }
   }
   #slideShow {
@@ -303,7 +377,7 @@ svg {
     padding-left: 0.35rem;
     width: min(50vh, 94vw);
   }
-  #myImg {
+  #myImg, #myImg2 {
     width: clamp(235px, 65vw, 445px);
     height: clamp(235px, 65vw, 445px);
     bottom: 0;
@@ -335,13 +409,26 @@ svg {
 }
 
 @media screen and (min-height: 1365px) and (max-width: 1030px) {
+  @keyframes projected {
+    0% {
+      opacity: 0;
+      transform: translate(80vw, -100vh);
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
   #slideShow {
     position: relative;
     left: 248px;
     top: 320px;
     width: 850px;
   }
-  #myImg {
+  #myImg, #myImg2 {
     width: 650px;
     height: 650px;
   }

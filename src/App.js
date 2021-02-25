@@ -1,5 +1,6 @@
 import React from "react";
 import About from "./pages/About";
+import AboutMe from "./pages/AboutMe";
 import Contact from "./pages/Contact";
 import Landing from "./pages/Landing"
 import Projects from "./pages/Projects";
@@ -14,6 +15,9 @@ function App() {
         </Route>
         <Route exact path={["/About", "/React-Portfolio/About"]}>
           <About />
+        </Route>
+        <Route exact path={["/AboutMe", "/React-Portfolio/AboutMe"]}>
+          <AboutMe />
         </Route>
         <Route exact path={["/Projects", "/React-Portfolio/Projects"]}>
           <Projects />

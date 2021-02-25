@@ -13,7 +13,7 @@ export default function Body(props) {
     <div className="bg" style={{ backgroundImage: `url(${props.bgImg})` }}>
       <Darkness shadowColor={props.shadowColor} />
       <Line lineColor={props.lineColor} />
-      <Header hamburger={props.hamburger} themeColor={props.themeColor} />
+      <Header hamburger={props.hamburger} tabs={"tabs"}/>
       <Contents pageContents={props.pageContents} galaxyImg={props.galaxyImg}/>
       <Particles id="tsparticles" options={tsparticles} />
     </div>
