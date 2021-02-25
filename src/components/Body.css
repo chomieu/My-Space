@@ -117,6 +117,23 @@
   bottom: 6vh;
   left: 7rem;
   z-index: 2;
+  opacity: 0;
+  animation: projected 1.5s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes projected {
+  0% {
+    opacity: 0;
+    transform: translate(100vw, 0) rotate(0deg);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) rotate(360deg);
+  }
 }
 
 /* --- Slideshow --- */
@@ -125,6 +142,9 @@
   width: 100%;
   background-color: black;
   border: 1px solid #555;
+  opacity: 0;
+  animation: appear 1.5s linear forwards;
+  animation-delay: 2s;
 }
 
 .carousel-item > div {
@@ -265,6 +285,19 @@ svg {
 /* --- @media screen --- */
 
 @media screen and (max-width: 991px) {
+  @keyframes projected {
+    0% {
+      opacity: 0;
+      transform: translate(100vw, -100vh) rotate(0deg);
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0) rotate(360deg);
+    }
+  }
   #slideShow {
     margin-left: 5px;
     padding-left: 0.35rem;

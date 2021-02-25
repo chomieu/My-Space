@@ -5,7 +5,7 @@ import { Carousel, Button } from "react-bootstrap"
 export default function Header() {
   return (
     <Carousel className="d-flex align-self-center p-1 pb-0" id="slideShow">
-      <Carousel.Item>
+      <Carousel.Item interval={6500}>
         <img
           className="d-block w-100"
           src="https://i.imgur.com/PV0WiqE.jpg"
@@ -20,7 +20,7 @@ export default function Header() {
           </Font>
         </div>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item interval={3000}>
         <img
           className="d-block w-100"
           src="https://i.imgur.com/wHayz1A.jpg"
@@ -32,13 +32,13 @@ export default function Header() {
             <h4>Next generation social planning</h4>
             <h4>app with A.I. integration.</h4>
             <div className="d-flex pb-3 pt-sm-3">
-              <Button variant="light" className="mr-3">Repository</Button>
-              <Button variant="light">Live Site</Button>
+            <Button href="https://github.com/chomieu/Meets" variant="light" className="mr-3">Repository</Button>
+              <Button href="https://uw-meets.herokuapp.com" variant="light">Live Site</Button>
             </div>
           </Font>
         </div>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item interval={3000}>
         <img
           className="d-block w-100"
           src="https://i.imgur.com/IN70QbQ.jpg"
@@ -47,11 +47,11 @@ export default function Header() {
         <div>
           <Font family="Concert One">
             <h3 className="text-border">Voicely</h3>
-            <h4>Notepad with Speech-to-Text technology</h4>
-            <h4>and ability to parse text to an emoji.</h4>
+            <h4>Online notepad with Speech-to-Text</h4>
+            <h4>and Speech-to-Emoji features.</h4>
             <div className="d-flex pb-3 pt-sm-3">
-              <Button variant="light" className="mr-3">Repository</Button>
-              <Button variant="light">Live Site</Button>
+              <Button href="https://github.com/chomieu/Voicely" variant="light" className="mr-3">Repository</Button>
+              <Button href="https://chomieu.github.io/Voicely/" variant="light">Live Site</Button>
             </div>
           </Font>
         </div>
