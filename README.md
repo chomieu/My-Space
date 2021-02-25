@@ -23,7 +23,7 @@ npm install
 ```
 
 ## Preview
-[Preview Video]()</br>
+[Preview Video](https://drive.google.com/file/d/1ic0PJDqNIF6rFkz_e0fKBE66abfI7Slu/view)</br>
 ![Preview GIF](./preview.gif)
 
 ## Link
