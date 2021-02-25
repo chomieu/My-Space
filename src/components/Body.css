@@ -154,7 +154,7 @@
 }
 
 .carousel-item > div > div > h4 {
-  font-size: clamp(12px, 2vw, 40px);
+  font-size: clamp(12px, 2vw, 30px);
 }
 
 .carousel-item > div > div > h3 {
