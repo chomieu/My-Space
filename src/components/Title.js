@@ -36,8 +36,8 @@ export default function Title() {
             autoStart: false,
             loop: true,
             cursor: "_",
-            delay: 50,
-            deleteSpeed: 50
+            delay: 25,
+            deleteSpeed: 20
           }}
           onInit={(typewriter) => {
             setTimeout(() => {

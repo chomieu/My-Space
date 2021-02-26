@@ -4,25 +4,25 @@ import Bio from "./pages/Bio";
 import Contact from "./pages/Contact";
 import Landing from "./pages/Landing"
 import Projects from "./pages/Projects";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path={["/", "/React-Portfolio"]}>
+        <Route exact path={["/"]}>
           <Landing />
         </Route>
-        <Route exact path={["/About", "/React-Portfolio/About"]}>
+        <Route exact path={["/About"]}>
           <About />
         </Route>
-        <Route exact path={["/Bio", "/React-Portfolio/Bio"]}>
+        <Route exact path={["/Bio"]}>
           <Bio />
         </Route>
-        <Route exact path={["/Projects", "/React-Portfolio/Projects"]}>
+        <Route exact path={["/Projects"]}>
           <Projects />
         </Route>
-        <Route exact path={["/Contact", "/React-Portfolio/Contact"]}>
+        <Route exact path={["/Contact"]}>
           <Contact />
         </Route>
       </Switch>
