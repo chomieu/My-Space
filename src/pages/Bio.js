@@ -31,7 +31,7 @@ export default function Bio() {
                 <p className="pl-lg-5 pr-lg-2 pr-1 ml-lg-5 mb-0">
                   I am currently available to take on a project or a collaboration.
                   <span>
-                    <Button href="/React-Portfolio/#/Contact" variant="light" size="sm">Let's talk!</Button>
+                    <Button href="/Contact" variant="light" size="sm">Let's talk!</Button>
                   </span>
                 </p>
               </Font>

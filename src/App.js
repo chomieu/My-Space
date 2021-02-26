@@ -10,19 +10,19 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path={["/"]}>
+        <Route exact path="/">
           <Landing />
         </Route>
-        <Route exact path={["/About"]}>
+        <Route exact path="/About">
           <About />
         </Route>
-        <Route exact path={["/Bio"]}>
+        <Route exact path="/Bio">
           <Bio />
         </Route>
-        <Route exact path={["/Projects"]}>
+        <Route exact path="/Projects">
           <Projects />
         </Route>
-        <Route exact path={["/Contact"]}>
+        <Route exact path="/Contact">
           <Contact />
         </Route>
       </Switch>
