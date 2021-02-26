@@ -64,7 +64,8 @@ export default function Header() {
         />
         <div style={{ opacity: 1 }}>
           <Font family="Monda">
-            <h4>Checkout my Github Repo for more:</h4><Button href="https://github.com/chomieu" variant="light" size="lg" className="mt-3">Here</Button>
+            <h4>Checkout my Github Repo for more:</h4>
+            <Button href="https://github.com/chomieu" variant="light" size="lg" className="mt-3">Here</Button>
           </Font>
         </div>
       </Carousel.Item>

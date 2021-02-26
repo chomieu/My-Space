@@ -25,12 +25,14 @@ export default function Bio() {
                 <p className="pl-lg-5 pr-lg-2 pr-1 ml-lg-5">
                   As a lifelong learner and a goal-oriented individual,
                   nothing excites me more than computer programming.
-                  I enjoy all aspects of coding, especially in bringing new designs, 
+                  I enjoy all aspects of coding, especially in bringing new designs,
                   ideas, and innovative solutions to life.
                 </p>
                 <p className="pl-lg-5 pr-lg-2 pr-1 ml-lg-5 mb-0">
                   I am currently available to take on a project or a collaboration.
-                  <a href="/React-Portfolio/#/Contact"> Let's talk!</a>
+                  <span>
+                    <Button href="/React-Portfolio/#/Contact" variant="light" size="sm">Let's talk!</Button>
+                  </span>
                 </p>
               </Font>
             </div>
