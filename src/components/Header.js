@@ -11,9 +11,9 @@ export default function Header(props) {
       <Navbar.Toggle bg="dark" style={{border: "none"}} />
       <Navbar.Collapse>
         <Nav>
-          <Nav.Link className={props.tabs} href="/About">About</Nav.Link>
-          <Nav.Link className={props.tabs} href="/Projects">Projects</Nav.Link>
-          <Nav.Link className={props.tabs} href="/Contact">Contact</Nav.Link>
+          <Nav.Link className={props.tabs} href="/#/About">About</Nav.Link>
+          <Nav.Link className={props.tabs} href="/#/Projects">Projects</Nav.Link>
+          <Nav.Link className={props.tabs} href="/#/Contact">Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

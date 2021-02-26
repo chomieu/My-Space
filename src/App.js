@@ -4,7 +4,7 @@ import Bio from "./pages/Bio";
 import Contact from "./pages/Contact";
 import Landing from "./pages/Landing"
 import Projects from "./pages/Projects";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
