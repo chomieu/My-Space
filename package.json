@@ -13,6 +13,7 @@
     "react-font": "^1.2.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
+    "react-scroll-wheel-handler": "^2.0.1",
     "react-tsparticles": "^1.18.12",
     "typewriter-effect": "^2.17.0"
   },

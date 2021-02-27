@@ -18,9 +18,9 @@ export default function Bio() {
             <div className="text-white p-3 px-sm-3 px-lg-5 ml-lg-5" id="bio">
               <Font family="Concert One">
                 <p className="pl-lg-5 pr-lg-2 pr-1 ml-lg-5">
-                  Hello, my name is Chomkan Usaneerungrueng (a.k.a. Chomie).
+                  Hi, I'm Chomie. Nice to meet you.
                   I am a recent graduate of the University of Washington
-                  Coding Bootcamp with 3 years of prior experience in biomedical research.
+                  Coding Bootcamp with 3 years of experience in biomedical research.
                 </p>
                 <p className="pl-lg-5 pr-lg-2 pr-1 ml-lg-5">
                   As a lifelong learner and a goal-oriented individual,
@@ -29,10 +29,7 @@ export default function Bio() {
                   ideas, and innovative solutions to life.
                 </p>
                 <p className="pl-lg-5 pr-lg-2 pr-1 ml-lg-5 mb-0">
-                  I am currently available to take on a project or a collaboration.
-                  <span>
-                    <Button href="/#/Contact" variant="light" size="sm">Let's talk!</Button>
-                  </span>
+                  I am currently available to take on a project or a collaboration. <Button href="/#/Contact" variant="light" size="sm">Let's talk!</Button>
                 </p>
               </Font>
             </div>

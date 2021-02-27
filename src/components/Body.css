@@ -1,3 +1,7 @@
+*, :hover {
+  cursor: url("https://i.imgur.com/iT5NTjQ.png?1"), auto !important;
+}
+
 /* --- Header --- */
 
 .text-border {
@@ -110,6 +114,16 @@ text-align: center;
 }
 
 /* --- Contact --- */
+
+.btn-dark, .btn-dark:hover, .btn-dark.focus {
+  color: transparent !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+#emailTooltip {
+  filter: invert(100%);
+}
 
 .whiteIcon, .blackIcon {
   width: 80px;

@@ -32,7 +32,7 @@ export default function Header() {
             <h4>Next generation social planning</h4>
             <h4>app with A.I. integration.</h4>
             <div className="d-flex pb-3 pt-sm-3">
-            <Button href="https://github.com/chomieu/Meets" variant="light" className="mr-3">Repository</Button>
+              <Button href="https://github.com/chomieu/Meets" variant="light" className="mr-3">Repository</Button>
               <Button href="https://uw-meets.herokuapp.com" variant="light">Live Site</Button>
             </div>
           </Font>
