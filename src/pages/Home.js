@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <Body 
         bgImg={"https://i.imgur.com/5QXXAkE.jpg"}
-        galaxyImg={"https://i.imgur.com/z5oQO2Q.png"}
+        galaxyImg={"https://i.imgur.com/TYzHzYI.png"}
         lineColor={"#ffffaf"}
         shadowColor={"#ff7402"}
         hamburger={"dark"}

@@ -334,7 +334,7 @@ text-align: center;
 }
 
 .wrapper {
-  height: calc(100% - 90px);
+  height: 100%;
   overflow: hidden;
 }
 
@@ -349,20 +349,21 @@ text-align: center;
 
 svg {
   position: fixed;
-  width: 100vw;
-  transform: translate(76vw, -40px);
+  width: max(30rem, 100vw);
+  transform: translate(60vw, -65vw);
   z-index: 0;
-  stroke-dasharray: 20;
-  stroke-dashoffset: 20;
+  stroke-dasharray: 25;
+  stroke-dashoffset: 25;
   animation: draw 1.5s ease-in forwards;
+  animation-delay: 0.5s;
 }
 
-@keyframes draw { to { stroke-dashoffset: 40; } }
+@keyframes draw { to { stroke-dashoffset: 50; } }
 
 #galaxyImg {
-  margin-right: 2vw;
-  width: min(50vw, 700px);
-  height: min(50vw, 700px);
+  margin: 1.5vh 3vw 0 0;
+  width: min(30vw, 60vh);
+  height: min(30vw, 60vh);
   object-fit: scale-down;
   z-index: 1;
   animation: spin-in 1.5s ease-in-out, spin 60s linear infinite;
@@ -383,8 +384,46 @@ svg {
   } 
 }
 
+#galaxyMenu {
+  list-style: none;
+  direction: rtl;
+  line-height: 45px;
+}
+
+#galaxyMenu > li {
+  padding: 5px 0;
+  font-size: min(5vw, 20px);
+  text-align: start;
+}
+
+#sunIcon {
+  margin-left: 13px;
+}
+
+#earthIcon, #moonIcon, #neptuneIcon { 
+  padding-right: 7px !important;
+  margin-left: 20px;
+}
+
 /* --- @media screen --- */
 
+@media screen and (max-width: 575px) {
+  #galaxyMenu {
+    direction: ltr;
+    padding: 0;
+  }
+  #galaxyMenu > li {
+    padding: 0;
+  }
+  #sunIcon {
+    margin-left: 13px;
+    margin-right: 7px;
+  }
+  #earthIcon, #moonIcon, #neptuneIcon { 
+    padding-left: 0;
+    margin-right: 5px;
+  }
+}
 @media screen and (max-width: 991px) {
   #bio {
     background-color: rgba(65, 65, 65, 0.3);
@@ -417,23 +456,14 @@ svg {
   }
   #galaxyImg {
     width: auto;
-    height: min(90vw, 50vh);
+    height: max(30vw, 25vh);
   } 
-  svg {
-    width: 100vh;
-    transform: translate(48vw, -47vw);
-    stroke-dasharray: 22;
-    stroke-dashoffset: 22;
-  }
   .tabs {
     margin-left: 0;
   }
 }
 
 @media screen and (max-width: 1470px) {
-  #galaxyImg {
-    margin-right: 0;
-  } 
   .contents {
     font-size: clamp(20px, 6vw, 45px);
     padding-left: 3vw !important;
@@ -470,8 +500,5 @@ svg {
   }
   .contents {
     font-size: 50px;
-  }
-  #galaxyImg {
-    margin-top: 5rem;
   }
 }
