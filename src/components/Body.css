@@ -368,10 +368,6 @@ svg {
   animation: spin-in 1.5s ease-in-out, spin 60s linear infinite;
 }
 
-#galaxyImg:hover {
-  animation-play-state: paused ;
-}
-
 @keyframes spin-in {
   0% {
     transform: translate(55rem, 0) rotate(0deg);

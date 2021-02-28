@@ -2,7 +2,7 @@ import React from "react"
 import Body from "../components/Body"
 import Title from "../components/Title"
 
-export default function Landing() {
+export default function Home() {
   return (
     <div>
       <Body 

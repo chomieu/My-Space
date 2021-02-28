@@ -11,24 +11,18 @@ export default function Links() {
     setShow(!show)
   }
 
-  const hideTooltip = () => {
-    setTimeout(() => {
-      setShow(!show)
-    }, 4000)
-  }
-
   return (
     <div className="pl-lg-5 pr-1 ml-lg-5">
       <Button href="https://github.com/chomieu" variant="dark">
-        <img class="whiteIcon mr-2" src="https://i.imgur.com/BjCzDmv.png?1" alt="github-icon" />
+        <img className="whiteIcon mr-2" src="https://i.imgur.com/BjCzDmv.png?1" alt="github-icon" />
       </Button>
       <Button href="https://www.linkedin.com/in/chomieu/" variant="dark">
-        <img class="blackIcon mr-2" src="https://i.imgur.com/K7fTpjH.png?1" alt="linkedin-icon" />
+        <img className="blackIcon mr-2" src="https://i.imgur.com/K7fTpjH.png?1" alt="linkedin-icon" />
       </Button>
       <Button variant="dark" ref={target} onClick={() => { emailCopied() }}>
-        <img class="blackIcon mr-2" src="https://i.imgur.com/fqeCWKx.png?1" alt="email-icon" />
+        <img className="blackIcon mr-2" src="https://i.imgur.com/fqeCWKx.png?1" alt="email-icon" />
       </Button>
-      <Overlay placement="right" target={target.current} show={show} onEntered={() => { hideTooltip() }}>
+      <Overlay placement="right" target={target.current} show={show}>
         {(props) => (
           <Tooltip id="emailTooltip" {...props}>
             Email copied!
