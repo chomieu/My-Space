@@ -10,7 +10,6 @@ export default function About() {
         galaxyImg={"https://i.imgur.com/bPkDW02.png"}
         lineColor={"#c7dca2"}
         shadowColor={"#efefb1"}
-        hamburger={"light"}
         pageContents={<Me />}
       />
     </div>

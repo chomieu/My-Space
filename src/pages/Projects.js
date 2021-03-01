@@ -10,7 +10,6 @@ export default function Projects() {
         galaxyImg={"https://i.imgur.com/t6WUaAR.png"}
         lineColor={"#bbb"}
         shadowColor={"#000000"}
-        hamburger={"dark"}
         pageContents={<Slideshow />}
       />
     </div>

@@ -10,7 +10,6 @@ export default function Home() {
         galaxyImg={"https://i.imgur.com/TYzHzYI.png"}
         lineColor={"#ffffaf"}
         shadowColor={"#ff7402"}
-        hamburger={"dark"}
         pageContents={<Title />}
       />
     </div>

@@ -2,7 +2,7 @@ import React from "react"
 import Font from "react-font"
 import { Carousel, Button } from "react-bootstrap"
 
-export default function Header() {
+export default function Slideshow() {
   return (
     <Carousel className="d-flex align-self-center p-1 pb-0" id="slideShow">
       <Carousel.Item interval={6500}>

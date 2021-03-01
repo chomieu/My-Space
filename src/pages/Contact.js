@@ -10,7 +10,6 @@ export default function Contact() {
         galaxyImg={"https://i.imgur.com/mQ2o3oa.png"}
         lineColor={"#9690df"}
         shadowColor={"#000000"}
-        hamburger={"dark"}
         pageContents={<Links />}
       />
     </div>

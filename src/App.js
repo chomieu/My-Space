@@ -4,7 +4,6 @@ import Page from "./pages/Page"
 import { HashRouter as Router, Route, Switch } from "react-router-dom"
 
 function App() {
-
   return (
     <Router>
       <Switch>
@@ -14,14 +13,14 @@ function App() {
         <Route exact path="/About">
           <Page id={1} />
         </Route>
-        <Route exact path="/Bio">
-          <Bio />
-        </Route>
         <Route exact path="/Projects">
           <Page id={2} />
         </Route>
         <Route exact path="/Contact">
           <Page id={3} />
+        </Route>
+        <Route exact path="/Bio">
+          <Bio />
         </Route>
       </Switch>
     </Router>

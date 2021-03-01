@@ -1,7 +1,7 @@
 import React from "react"
 import Darkness from "./Darkness"
 import Line from "./Line"
-import Header from "./Header"
+import Brand from "./Brand"
 import Contents from "./Contents"
 import Particles from "react-tsparticles";
 import tsparticles from "../utils/tsparticles.json"
@@ -13,7 +13,7 @@ export default function Body(props) {
     <div className="bg" style={{ backgroundImage: `url(${props.bgImg})` }}>
       <Darkness shadowColor={props.shadowColor} />
       <Line lineColor={props.lineColor} />
-      {/* <Header hamburger={props.hamburger} tabs={"tabs"}/> */}
+      <Brand tabs="tabs" />
       <Contents pageContents={props.pageContents} galaxyImg={props.galaxyImg}/>
       <Particles id="tsparticles" options={tsparticles} />
     </div>

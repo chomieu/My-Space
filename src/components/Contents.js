@@ -7,10 +7,10 @@ export default function Contents(props) {
   return (
     <Container fluid className="wrapper">
       <Row className="h-100">
-        <Col className="contents" xs={12} lg={8}>
+        <Col className="contents" xs={12} lg={7}>
           {props.pageContents}
         </Col>
-        <Col className="d-flex flex-row-reverse flex-sm-column justify-content-between justify-content-sm-start align-items-start align-items-sm-end p-0" xs={12, { order: "first" }} lg={4, { order: "last" }}>
+        <Col className="d-flex flex-row-reverse flex-sm-column justify-content-between justify-content-sm-start align-items-start align-items-sm-end p-0" xs={12, { order: "first" }} lg={5, { order: "last" }}>
           <img id="galaxyImg" alt="galaxyImg" src={props.galaxyImg} />
           <Font family="Concert One">
             <ul id="galaxyMenu">

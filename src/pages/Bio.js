@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../components/Header"
 import Font from "react-font"
+import Brand from "../components/Brand"
 import Particles from "react-tsparticles";
 import tsparticles from "../utils/tsparticles.json"
 import { Container, Row, Col, Button } from "react-bootstrap"
@@ -8,13 +8,16 @@ import { Container, Row, Col, Button } from "react-bootstrap"
 export default function Bio() {
   return (
     <div id="fake-bg">
-      <Header hamburger={"dark"} tabs={"tabsOpposite"} />
+      <Brand />
+      <Button href="/#/About" id="backBtn">
+        <Font family="Concert One">Back</Font>
+      </Button>
       <Container fluid className="wrapper">
         <Row className="h-100">
           <Col className="contents" xs={12} lg={6}>
             <section id="myImg2" ></section>
           </Col>
-          <Col xs={12, { order: "first" }} lg={4, { order: "last" }}>
+          <Col className="d-flex align-items-end" xs={12} lg={6}>
             <div className="text-white p-3 px-sm-3 px-lg-5 ml-lg-5" id="bio">
               <Font family="Concert One">
                 <p className="pl-lg-5 pr-lg-2 pr-1 ml-lg-5">
