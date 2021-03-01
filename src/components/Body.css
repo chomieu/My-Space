@@ -391,18 +391,40 @@ svg {
 }
 
 #galaxyMenu > li {
-  padding: 5px 0;
+  padding: 5px 2vw;
   font-size: min(5vw, 20px);
   text-align: start;
 }
 
+li > a:hover {
+  text-decoration: none;
+}
+
 #sunIcon {
   margin-left: 13px;
+  transform: scale(0.5);
+  filter: grayscale(100%);
 }
 
 #earthIcon, #moonIcon, #neptuneIcon { 
   padding-right: 7px !important;
   margin-left: 20px;
+  transform: scale(0.5);
+  filter: grayscale(100%);
+}
+
+a > span {
+  display: none;
+}
+
+.currentIcon > span {
+  color: white !important;
+  display: contents;
+}
+
+.currentIcon > img {
+  transform: none !important;
+  filter: none !important;
 }
 
 /* --- @media screen --- */
@@ -486,8 +508,8 @@ svg {
   }
   #slideShow {
     position: relative;
-    left: 248px;
-    top: 320px;
+    left: 160px;
+    top: 370px;
     width: 850px;
   }
   #myImg, #myImg2 {
@@ -496,7 +518,7 @@ svg {
   }
   #title {
     margin-top: 30rem;
-    font-size: 110px;
+    font-size: 90px;
   }
   .contents {
     font-size: 50px;
