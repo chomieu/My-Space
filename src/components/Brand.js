@@ -1,5 +1,6 @@
 import React from "react"
 import Font from "react-font"
+import Menu from "./Menu"
 import { Navbar, Nav } from "react-bootstrap"
 
 export default function Brand(props) {
@@ -9,6 +10,7 @@ export default function Brand(props) {
         <Nav.Link href="/" className="text-white text-border pb-0 pl-0 pl-md-2 pl-lg-3 mr-1">
           <h3>Chomie</h3>
         </Nav.Link>
+        <Menu />
       </Font>
     </Navbar>
   )
