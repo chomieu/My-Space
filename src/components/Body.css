@@ -75,7 +75,7 @@ nav {
 }
 
 #title {
-  font-size: clamp(40px, 6vw, 85px);
+  font-size: clamp(35px, 6vw, 85px);
   margin-bottom: 2vw;
   text-shadow: 2px 0 20px whitesmoke, -2px 0 0 #f57e00, 0 2px 0 #f57e00, 0 -2px 0 #f57e00, 1px 1px #f57e00, -1px -1px 0 #f57e00, 1px -1px 0 #f57e00, -1px 1px 0 #f57e00;
 }
