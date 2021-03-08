@@ -5,6 +5,11 @@ export default function Menu() {
   return (
     <ul id="galaxyMenu">
       <li>
+        <a exact className="" >
+          <img src="https://i.imgur.com/btQ7ezw.png?1" id="upIcon" alt="upIcon" />
+        </a>
+      </li>
+      <li>
         <NavLink exact activeClassName="currentIcon text-border" to="/">
           <img src="https://i.imgur.com/iLfVAZb.png?1" id="sunIcon" alt="sunIcon" />
           <span>Home</span>
@@ -27,6 +32,11 @@ export default function Menu() {
           <img src="https://i.imgur.com/o9MmXkK.png?1" id="neptuneIcon" alt="neptuneIcon" />
           <span>Contact</span>
         </NavLink>
+      </li>
+      <li>
+        <a exact className="" >
+          <img src="https://i.imgur.com/rLOCSXj.png?1" id="downIcon" alt="downIcon" />
+        </a>
       </li>
     </ul>
   )

@@ -403,7 +403,7 @@ li > a:hover {
   filter: grayscale(100%);
 }
 
-#earthIcon, #moonIcon, #neptuneIcon { 
+#earthIcon, #moonIcon, #neptuneIcon, #downIcon, #upIcon { 
   padding-right: 13px !important;
   padding-left: 7px;
   transform: scale(0.5);
@@ -412,7 +412,7 @@ li > a:hover {
 
 a > span {
   color: white;
-  opacity: 0.3;
+  display: none;
 }
 
 .currentIcon > span {
@@ -423,6 +423,7 @@ a > span {
   transform: none !important;
   filter: none !important;
   animation: expands 0.25s ease-in forwards;
+  margin-left: 2px;
 }
 
 @keyframes expands {
