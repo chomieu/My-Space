@@ -12,7 +12,7 @@ export default function Links() {
   }
 
   return (
-    <div className="pl-lg-5 ml-lg-5">
+    <div className="pl-lg-4 ml-lg-4">
       <Button href="https://github.com/chomieu" variant="dark">
         <img className="whiteIcon mx-2 my-3" src="https://i.imgur.com/BjCzDmv.png?1" alt="github-icon" />
       </Button>
