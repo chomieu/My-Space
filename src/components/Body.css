@@ -339,6 +339,7 @@ nav {
 .contents {
   color: white;
   font-size: 50px;
+  padding-top: 15vh;
   padding-left: 7vw !important;
   display: flex;
   flex-direction: column;
@@ -443,6 +444,9 @@ a > span {
   }
 }
 @media screen and (max-width: 991px) {
+  .contents {
+    padding-top: 0;
+  }
   #bio {
     background-color: rgba(65, 65, 65, 0.3);
     padding: 1rem !important;
@@ -469,7 +473,6 @@ a > span {
     width: clamp(235px, 65vw, 445px);
     height: clamp(235px, 65vw, 445px);
     font-size: max(4vw, 20px);
-    bottom: 0;
     left: 1.3rem;
   }
   .tabs {
@@ -480,7 +483,7 @@ a > span {
 @media screen and (max-width: 1470px) {
   .contents {
     font-size: clamp(20px, 6vw, 45px);
-    padding-left: 3vw !important;
+    padding-left: 5vw !important;
   } 
 }
 
@@ -508,11 +511,7 @@ a > span {
     width: 650px;
     height: 650px;
   }
-  #title {
-    margin-top: 30rem;
-    font-size: 70px;
-  }
   .contents {
-    font-size: 50px;
-  }
+    font-size: 40px;
+  } 
 }
