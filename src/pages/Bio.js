@@ -34,7 +34,7 @@ export default function Bio() {
                   <ul>
                     <li class="tech">Languages: HTML, CSS, JavaScript, SQL, Handlebars, Python, Java</li>
                     <li class="tech">Library/Frameworks: React, jQuery, Node.js, Express.js, mySQL, Sequelize, MongoDB, Mongoose, D3</li>
-                    <li class="tech">Others: Git, GitHub, RESTful API, MVC, SEO, Responsive UI, UX/UI, WebSocket, test suite, project management</li>
+                    <li class="tech">Others: Git, GitHub, RESTful API, MVC, SEO, Responsive UI, UX/UI, WebSocket, Test Suite, Project Management</li>
                   </ul>
                 </p>
                 <p className="pl-lg-5 pr-lg-2 pr-1 ml-lg-5 mb-0">
