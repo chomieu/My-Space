@@ -411,11 +411,11 @@ li > a:hover {
 }
 
 a > span {
-  display: none;
+  color: white;
+  opacity: 0.3;
 }
 
 .currentIcon > span {
-  color: white !important;
   display: contents;
 }
 
