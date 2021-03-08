@@ -1,9 +1,9 @@
 import React from "react"
 import { NavLink } from "react-router-dom"
 
-export default function Menu() {
+export default function Menu(props) {
   return (
-    <ul id="galaxyMenu">
+    <ul id="galaxyMenu" style={props.hideMenu}>
       <li>
         <a exact className="" >
           <img src="https://i.imgur.com/btQ7ezw.png?1" id="upIcon" alt="upIcon" />

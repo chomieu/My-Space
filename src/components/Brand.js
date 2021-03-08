@@ -10,7 +10,7 @@ export default function Brand(props) {
         <Nav.Link href="/" className="text-white text-border pb-0 pl-0 pl-md-2 pl-lg-3 mr-1">
           <h3>Chomie</h3>
         </Nav.Link>
-        <Menu />
+        <Menu hideMenu={props.hideMenu} />
       </Font>
     </Navbar>
   )

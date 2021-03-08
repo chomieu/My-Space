@@ -8,7 +8,7 @@ import { Container, Row, Col, Button } from "react-bootstrap"
 export default function Bio() {
   return (
     <div id="fake-bg">
-      <Brand />
+      <Brand hideMenu={{ display: "none" }} />
       <Button href="/#/About" id="backBtn">
         <Font family="Concert One">Back</Font>
       </Button>
@@ -17,22 +17,20 @@ export default function Bio() {
           <Col className="contents" xs={12} lg={6}>
             <section id="myImg2" ></section>
           </Col>
-          <Col className="d-flex align-items-end" xs={12} lg={6}>
+          <Col className="d-flex align-items-end align-items-lg-start mt-5" xs={12} lg={6}>
             <div className="text-white p-3 px-sm-3 px-lg-5 ml-lg-5" id="bio">
               <Font family="Concert One">
                 <p className="pl-lg-5 pr-lg-2 pr-1 ml-lg-5">
                   Hi, I'm Chomie. Nice to meet you.
                   I am a recent graduate of the University of Washington
-                  Coding Bootcamp with 3 years of experience in biomedical research.
+                  Coding Bootcamp with 3 years of prior experience in biomedical research.
                 </p>
                 <p className="pl-lg-5 pr-lg-2 pr-1 ml-lg-5">
-                  As a lifelong learner and a goal-oriented individual,
-                  nothing excites me more than computer programming.
                   I enjoy all aspects of coding, especially in bringing new designs,
-                  ideas, and innovative solutions to life.
+                  ideas, and innovative solutions to life. I am currently available to take on a project or a collaboration.
                 </p>
                 <p className="pl-lg-5 pr-lg-2 pr-1 ml-lg-5 mb-0">
-                  I am currently available to take on a project or a collaboration. <Button href="/#/Contact" variant="light" size="sm">Let's talk!</Button>
+                   <Button href="/#/Contact" variant="light" size="sm">Let's talk!</Button>
                 </p>
               </Font>
             </div>
