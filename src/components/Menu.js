@@ -4,11 +4,7 @@ import { NavLink } from "react-router-dom"
 export default function Menu(props) {
   return (
     <ul id="galaxyMenu" style={props.hideMenu}>
-      <li>
-        <a exact className="" >
-          <img src="https://i.imgur.com/btQ7ezw.png?1" id="upIcon" alt="upIcon" />
-        </a>
-      </li>
+      <img src="https://i.imgur.com/btQ7ezw.png?1" className={props.scrollText} id="upIcon" alt="upIcon" style={props.hideUpIcon}/>
       <li>
         <NavLink exact activeClassName="currentIcon text-border" to="/">
           <img src="https://i.imgur.com/iLfVAZb.png?1" id="sunIcon" alt="sunIcon" />
@@ -33,11 +29,7 @@ export default function Menu(props) {
           <span>Contact</span>
         </NavLink>
       </li>
-      <li>
-        <a exact className="" >
-          <img src="https://i.imgur.com/rLOCSXj.png?1" id="downIcon" alt="downIcon" />
-        </a>
-      </li>
+      <img src="https://i.imgur.com/rLOCSXj.png?1" className={props.scrollText} id="downIcon" alt="downIcon" style={props.hideDownIcon}/>
     </ul>
   )
 }

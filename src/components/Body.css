@@ -75,7 +75,7 @@ nav {
 }
 
 #title {
-  font-size: clamp(35px, 6vw, 85px);
+  font-size: clamp(40px, 6vw, 85px);
   margin-bottom: 2vw;
   text-shadow: 2px 0 20px whitesmoke, -2px 0 0 #f57e00, 0 2px 0 #f57e00, 0 -2px 0 #f57e00, 1px 1px #f57e00, -1px -1px 0 #f57e00, 1px -1px 0 #f57e00, -1px 1px 0 #f57e00;
 }
@@ -280,7 +280,7 @@ nav {
   font-size: clamp(14px, 2vw, 30px);
 }
 
-.carousel-item > div > div > h3 {
+.carousel-item > div > div > h3, #findMe {
   font-size: clamp(25px, 4vw, 80px);
 }
 
@@ -427,6 +427,16 @@ a > span {
   margin-left: 2px;
 }
 
+.scrollText {
+  animation: blinkBlink 1.5s steps(5, start) infinite;
+}
+
+@keyframes blinkBlink {
+  to {
+    visibility: hidden;
+  }
+}
+
 @keyframes expands {
   100% { transform: scale(1) } 
 }
@@ -465,8 +475,6 @@ a > span {
     }
   }
   #slideShow {
-    margin-left: 5px;
-    padding-left: 0.35rem;
     width: min(50vh, 94vw);
   }
   #myImg, #myImg2 {
@@ -482,7 +490,7 @@ a > span {
 
 @media screen and (max-width: 1470px) {
   .contents {
-    font-size: clamp(20px, 6vw, 45px);
+    font-size: clamp(20px, 6vw, 40px);
     padding-left: 5vw !important;
   } 
 }
