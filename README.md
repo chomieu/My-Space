@@ -9,7 +9,7 @@ Personal portfolio made with ReactJS.
 * [Questions](#questions)
 
 ## Preview
-[Preview Video](https://drive.google.com/file/d/1hiIj5AJEihojCPaxhC9Mh4pPhmt8XEIf/view)</br>
+[Preview Video](https://drive.google.com/file/d/1wKXpTdF8fuFXnaffc4YNNZJX6sSybQgV/view)</br>
 ![Preview GIF](./preview.gif)
 
 ## Link
