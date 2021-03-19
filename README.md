@@ -1,6 +1,6 @@
-# React-Portfolio
+# Galaxy-Portfolio
 
-Personal portfolio made with ReactJS.
+Personal portfolio made with ReactJS, using galaxy theme.
 
 ## Table of Contents
 * [Preview](#preview)
