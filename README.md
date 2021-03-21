@@ -16,7 +16,7 @@ Galaxy-themed personal portfolio made with ReactJS.
 <https://chomieu.github.io/My-Space/>
 
 ## Technologies
-<img src="https://d23wxovozhm1zu.cloudfront.net/uploads/technologies/logos/big/20/original/renuo_technology_react-large.png?v=63748570849" width="150" />
+<a href="https://reactjs.org/"><img src="https://i.imgur.com/c24KSot.png" width="150" /></a>
 
 ## Questions
 For questions, contact [chomieu](https://github.com/chomieu) or email chomieu@gmail.com
