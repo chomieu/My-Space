@@ -1,8 +1,8 @@
 {
-  "name": "react-portfolio",
+  "name": "my-space",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://chomieu.com",
+  "homepage": "https://chomieu.github.io/My-Space",
   "dependencies": {
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
@@ -50,12 +50,12 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chomieu/React-Portfolio.git"
+    "url": "git+https://github.com/chomieu/My-Space.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chomieu/React-Portfolio/issues"
+    "url": "https://github.com/chomieu/My-Space/issues"
   }
 }
