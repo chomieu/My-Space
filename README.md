@@ -1,6 +1,6 @@
-# Galaxy-Portfolio
+# My-Space
 
-Personal portfolio made with ReactJS, using galaxy theme.
+Galaxy-themed personal portfolio made with ReactJS.
 
 ## Table of Contents
 * [Preview](#preview)
@@ -13,7 +13,7 @@ Personal portfolio made with ReactJS, using galaxy theme.
 ![Preview GIF](./preview.gif)
 
 ## Link
-<https://chomieu.com/>
+<https://chomieu.github.io/My-Space/>
 
 ## Technologies
 <img src="https://d23wxovozhm1zu.cloudfront.net/uploads/technologies/logos/big/20/original/renuo_technology_react-large.png?v=63748570849" width="150" />
